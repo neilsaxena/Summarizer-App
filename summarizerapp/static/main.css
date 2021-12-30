@@ -1,0 +1,129 @@
+/* Adding fonts */
+
+@font-face {
+  font-family: JuliusSansOne;
+  src: url(JuliusSansOne-Regular.woff2);
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(PlayfairDisplay-Regular.woff2);
+}
+
+.hovernow {
+  background-color: #ffffff;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  box-shadow: 0 10px 55px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+/*to alter color */
+.hovernow:hover {
+  box-shadow: 0 5px 60px #f54703;
+}
+
+body {
+  background: url("background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: JuliusSansOne;
+  color: #f54703;
+}
+
+h3 {
+  font-family: JuliusSansOne;
+  text-align: center;
+  font-weight: bold;
+}
+
+#summary {
+  font-family: PlayfairDisplay;
+  text-align: justify;
+}
+
+#spinner_p_tag {
+  font-family: JuliusSansOne;
+  text-align: center;
+}
+
+#main_button {
+  margin: auto;
+  width: 40%;
+}
+
+#main_headline {
+  font-family: PlayfairDisplay;
+  text-align: center;
+  font-size: 40px;
+  background: -webkit-linear-gradient(red, gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.loader {
+  display: none;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.loading {
+  border: 2px solid #ccc;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-top-color: #1ecd97;
+  border-left-color: #1ecd97;
+  animation: spin 1s infinite ease-in;
+}
+
+.center {
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.summarization_method {
+  font-size: 13px;
+  padding: 10px 8px 10px 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.summarization_method .select {
+  width: 120%;
+  background: url("arrow.png") no-repeat;
+  background-position: 80% center;
+}
+
+.summarization_method .select select {
+  background: transparent;
+  line-height: 1;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 120%;
+  position: relative;
+  z-index: 10;
+  font-size: 1em;
+}
